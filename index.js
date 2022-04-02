@@ -1,6 +1,6 @@
 const express = require('express');
 const mysql = require('mysql');
-require('dotenv').config();
+if (!process.env.PORT) require('dotenv').config();
 
 const app = express();
 
